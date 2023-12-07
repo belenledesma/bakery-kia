@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logokia{
+    height: 120px;
+    width: 120px;
+}
+/*.mainFlex{
+    margin: 5px;
+    display: flex;
+}
+*/
+/*APLICANDO GRID*/
+.mainGrid{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+
+
+/*.inline-block{
+    display: inline-block;
+    
+}*/
+
+header{
+    margin: 5px;
+}
+
+
+nav ul li{
+    display: inline;
+    margin-bottom: 5%;
+    padding: 15px;
+    color:black;
+    
+}
+
+header nav ul{
+    list-style-type: none;
+    text-align: center;
+    
+}
+header nav ul li a{
+    text-decoration:none;
+}
+
+.cajasNav{
+    width: 20vh;
+    background-color: rgb(171, 228, 228);
+    padding: 15px;
+    border-radius: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+    
+#conoce{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#batidos{
+    background-image: url(../assets/milkshakevariedad.webp);
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+}
+
+#gluten{
+    background-image: url(../assets/glutenfree.png);
+    background-repeat: no-repeat;
+    height: 410px;
+    width: auto;
+    text-align: center;
+}
+
+.articuloBlancoFont{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;    
+}
+
+footer{
+    margin-top: 50px;
+}
+
+footer img{
+    width:50px;
+    height: 50px;
+}
+
+
+
+#nosotrosMuffin{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h2{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.divNosotros{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mainMenu{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(2,auto);
+    grid-template-rows: repeat(4,auto);
+    gap: 10px 5px;
+    grid-template-areas: 
+    "menu menu"
+    "section1 section2"
+    "section3 section4"
+    "section5 section5";
+}
+
+.menu{
+    text-decoration: underline;
+    grid-area: menu;
+}
+.section1{
+   
+    grid-area: section1;
+}
+
+.section2{
+    grid-area: section2;
+    
+}
+.section3{
+    grid-area: section3;
+    
+}
+.section4{
+    
+    grid-area: section4;
+}
+
+.section5{
+    grid-area: section5;
+
+}
+
+
+.inputMargin{
+    margin: 5px;
+}
+
+.divMapa{
+    margin: 5px;
+}
+
+.menuDesplegable{
+    margin: 10px;
+}
+
+.menu{
+    flex-grow: 1;
+}
+
+.navList{
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+.redondearImg{
+    border-radius: 100px 100px;
+    box-shadow: 0px 0px 10px 3px black;
+}
+
+.divCard{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.multimedia{
+    margin-bottom: 100px;
+}
+/*APLICANDO MEDIA QUERIES */
+
+/*QUERY PARA TABLET*/
+
+@media (max-width: 1024px){
+   .mainGrid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    flex-wrap: wrap;
+    height: 100vw;
+   }
+   #batidos{
+    background-size: 100% calc(100vw * 2 / 4);
+    height: calc(100vw * 2 / 4)
+   }
+
+   #gluten{
+    background-size: 100%;
+    }
+
+    .divCard{
+        flex-wrap: wrap;
+    }
+
+    .mainContacto{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/*QUERY PARA MOBILE*/
+@media (max-width: 768px){
+    .mainGrid{
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(2, 1fr);
+     flex-wrap: wrap;
+     height: calc(100vw * 5 / 4);
+    }
+    #batidos{
+     background-size: 100% calc(100vw * 2.5 / 4);
+     height: calc(100vw * 2.5 / 4);
+    }
+ 
+    #gluten{
+     background-size: 100%;
+
+    }
+    .divCard{
+        flex-wrap: wrap;
+    }
+
+    .mainContacto{
+        flex-wrap: wrap;
+    }
+
+ }

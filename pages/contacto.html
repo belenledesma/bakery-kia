@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO-BAKERY KIA</title>
+    <link rel="shortcut icon" href="../assets/logokiaosc.jpg" type="image/x-icon">
+    <!--Link Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <!--<a class="navbar-brand" href="#">Navbar</a>-->
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navList">
+                    
+                    <li class="cajasNav"><a href="../index.html">HOME</a></li>
+                    <li class="cajasNav"><a href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a href="../index.html"><img class="redondearImg" src="../assets/logokiaosc.jpg" alt="logo BAKERY KIA" id="logokia"></a></li>
+                    <li class="cajasNav"><a href="./menu.html">MENU</a></li>
+                    <li class="cajasNav">CONTACTO</li>
+                    <li class="cajasNav"><a href="./eventos.html">EVENTOS</a></li>
+                    
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <main class="mainContacto">
+
+        <h1>Contacto</h1>
+
+        <section>
+            <h2>Contactanos y disfruta de nuestra carta del día! </h2>
+            <br>
+            <!--Formulario-->
+
+            <form action="">
+                <!--<label for="nombre">Nombre:</label>-->
+                <input type="text" name="" id="nombre" placeholder="Nombre">
+
+                <!--<label for="numero">Número:</label>-->
+                <input type="number" name="" id="numero" placeholder="Número">
+
+                <!--<label for="email">Email</label>-->
+                <input type="email" name="" id="email" placeholder="Email"> 
+                
+                <!--<label for="comentario">Dejanos tu mensaje</label>-->
+                <input type="text" name="" id="comentario" placeholder="Comentario">
+
+                <!--RADIO-->
+                <p>Acepta terminos y condiciones?</p>
+                <label for="si">Si</label>
+                <input type="radio" name="terminos" id="si">   
+
+                <label for="no">No</label>
+                <input type="radio" name="terminos" id="no" class="inputMargin">
+
+
+                <!--CHECKBOX-->
+
+                <p>Seleccione horario de frecuencia </p>
+                <label for="mañana">Mañana</label>
+                <input type="checkbox" name="horario" id="mañana">
+
+                <label for="tarde">Tarde</label>
+                <input type="checkbox" name="horario" id="tarde" class="inputMargin">
+
+                
+                <!--BOTONES-->
+                
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar" class="inputMargin">
+
+                
+                <!--MAPA-->
+                <div class="divMapa">
+                    <h2>Conoce nuestro local en Quilmes</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6558.917839553943!2d-58.26314637775225!3d-34.718824963542566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e15ad11bb65%3A0x863bbc8b8f994a72!2sPlaza%20del%20Bicentenario!5e0!3m2!1ses-419!2sar!4v1699316605635!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+                <!--MENU DESPLEGABLE-->
+                <fieldset class="menuDesplegable">
+                    <legend>Seleccione su Factura Argentina favorita y participe por un sorteo en esta navidad!</legend>
+                    <select name="factura" id="">
+                        <option value="medialuna">Medialuna</option>
+                        <option value="vigilante">Vigilante</option>
+                        <option value="tortita">Tortita negra</option>
+                        <option value="churro">Churro</option>
+                        <option value="sacramento">Sacramento</option>
+                        <option value="bola de fraile">Bola de fraile</option>
+                        <option value="pan de leche">Pan de leche</option>
+                        <option value="moñito">Moñito</option>
+                </fieldset>
+            
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+                
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <a href="https://www.instagram.com/bakerykia/" target="_blank"> <img src="../assets/socialmediai.jpg" alt="Instagram" ></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/socialmediaf.jpg" alt="Facebook"></a>
+
+    </footer>
+    <!--Link js/bootstrap -->
+    <script src="../js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
