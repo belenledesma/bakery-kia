@@ -1,0 +1,25 @@
+@media (max-width: 1024px){
+    .mainGrid{
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(2, 1fr);
+     flex-wrap: wrap;
+     height: 100vw;
+    }
+    #batidos{
+     background-size: 100% calc(100vw * 2 / 4);
+     height: calc(100vw * 2 / 4)
+    }
+ 
+    #gluten{
+     background-size: 100%;
+     }
+ 
+     .divCard{
+         flex-wrap: wrap;
+     }
+ 
+     .mainContacto{
+         flex-wrap: wrap;
+     }
+ 
+ }

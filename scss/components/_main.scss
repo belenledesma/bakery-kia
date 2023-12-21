@@ -1,0 +1,89 @@
+.mainGrid{
+    #batidos{
+        background-image: url(../assets/milkshakevariedad.webp);
+        background-repeat: no-repeat;
+        height: 500px;
+        width: auto;
+        .articuloBlancoFont{
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;    
+        }
+    }
+    #gluten{
+        background-image: url(../assets/glutenfree.png);
+        background-repeat: no-repeat;
+        height: 410px;
+        width: auto;
+        text-align: center;
+    }
+    section{
+        .h2{
+            text-align: center;
+            margin-top: 5px;
+        }
+    }
+    .divNosotros{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.mainMenu{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:repeat(2,auto);
+    grid-template-rows: repeat(4,auto);
+    gap: 10px 5px;
+    grid-template-areas: 
+    "menu menu"
+    "section1 section2"
+    "section3 section4"
+    "section5 section5";
+    .menu{
+        text-decoration: underline;
+        grid-area: menu;
+        flex-grow: 1;
+    }
+}
+
+main{
+    .section1{
+   
+        grid-area: section1;
+    }
+    .section2{
+        grid-area: section2;
+        
+    }
+    .section3{
+        grid-area: section3;
+        
+    }
+    .section4{
+        
+        grid-area: section4;
+    }
+    
+    .section5{
+        grid-area: section5;
+    
+    }
+}
+
+.mainContacto{
+    section{
+        form{
+            .inputMargin{
+                margin: 5px;
+            }
+            .divMapa{
+                margin: 5px;
+            }
+            .menuDesplegable{
+                margin: 10px;
+            }
+        }
+    }
+}
